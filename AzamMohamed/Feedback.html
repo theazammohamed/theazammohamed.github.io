@@ -1,21 +1,77 @@
+<!DOCTYPE html>
 <html>
-    <title>Feedback!</title>
-<body>
-    <font face="Edwardian Script ITC" size="7"><b>A feedback to the website would really help us!</b></font>
-    <form action="" method="get" class="feedback">
-    <div class="feedback">
-        <label for="name"><font face="Footlight MT Light" size="5">Name:</font></label>
-        <input type="text" name="name" id="name" required>
-    </div><br>
-    <div class="feedback">
-        <label for="email"><font face="Footlight MT Light" size="5">Email:</font></label>
-        <input type="text" name="email" id="email" required>
-    </div><br>
-    <div class="feedback">
-        <label for="fb"><font face="Footlight MT Light" size="5">Comment on the website:</font></label><br>
-        <textarea rows="10" cols="47" type="text" name="fb" id="fb" required></textarea>
-    <br><br>
-        <input type="submit" name="">
+    <head>
+        <title>Feedback!</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+    <body style="background-color:rgba(214, 183, 9, 0.678);">
+        <header>
+            <font face="Edwardian Script ITC" size="7"><center><b>A feedback to the website would really help us!</b></center></font>
+        </header>
+        <br>
+
+        <form align="center" action="" method="get" class="feedback">
+            <label for="name"><font face="Footlight MT Light" size="5">Name:</font></label>
+            <input id="name" name="name" type="text" required>
+            <br><br>
+
+            <label for="tel"><font face="Footlight MT Light" size="5">Contact Number:</font></label>
+            <input id="tel" name="tel" type="tel" required>
+            <br><br>
+
+            <label for="email"><font face="Footlight MT Light" size="5">Email:</font></label>
+            <input id="email" name="email" type="email" placeholder="example@gmail.com" required>
+            <br><br>
+
+            <fieldset>
+                <legend><font face="Footlight MT Light" size="5">Which most suits you?</font></legend>
+                <input id="student" name="student" type="radio">
+                <label for="student"><font face="Footlight MT Light" size="4">Student</font></label>
+                <br><br>
+
+                <input id="teacher" name="teacher" type="radio">
+                <label for="teacher"><font face="Footlight MT Light" size="4">Teacher</font></label>
+                <br><br>
+
+                <input id="employer" name="employer" type="radio">
+                <label for="employer"><font face="Footlight MT Light" size="4">Employer</font></label>
+                <br><br>
+
+                <input id="other" name="other" type="radio">
+                <label for="other"><font face="Footlight MT Light" size="4">Other</font></label>
+            </fieldset>
+            <br><br>
+
+            <fieldset>
+                <legend><font face="Footlight MT Light" size="5">Which resource directed you to my portfolio website?</font></legend>
+                <input id="linkedin" name="linkedin" type="checkbox">
+                <label for="linkedin"><font face="Footlight MT Light" size="4">Linkedin</font></label>
+                <br><br>
+
+                <input id="youtube" name="youtube" type="checkbox">
+                <label for="youtube"><font face="Footlight MT Light" size="4">Youtube</font></label>
+                <br><br>
+
+                <input id="facebook" name="facebook" type="checkbox">
+                <label for="facebook"><font face="Footlight MT Light" size="4">Facebook</font></label>
+                <br><br>
+
+                <input id="github" name="github" type="checkbox">
+                <label for="github"><font face="Footlight MT Light" size="4">Github</font></label>
+                <br><br>
+
+                <input id="other" name="other" type="checkbox">
+                <label for="other"><font face="Footlight MT Light" size="4">Other</font></label>
+            </fieldset>
+            <br><br>
+
+            <label for="fb"><font face="Footlight MT Light" size="5">Comment on the website:</font></label><br>
+            <textarea id="fb" name="fb" type="text" rows="10" cols="47" style="max-width:100%; width:100%; border-collapse:collapse;" required></textarea>
+            <br><br>
+
+            <button type="submit">Submit</button>
         </form>
-</body>
+    </body>
 </html>  
