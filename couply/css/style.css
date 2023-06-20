@@ -280,7 +280,7 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
+    background-color: #56674f;
     padding-top: 20vh;
     position: fixed;
     top: 0;
@@ -288,8 +288,20 @@ footer {
     height: 100vh;
     width: 100vw;
     z-index: 3;
-    row-gap: 40px;
-    transition: right 0.5s ease;
+    row-gap: 50px;
+    transition: right 0.7s ease;
+  }
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+  }
+  .close:hover {
+    animation: rotate ease 0.3s both;
+  }
+  .center.slide-out {
+    right: -120%;
   }
   .center.slide-in {
     right: 0;
@@ -299,7 +311,8 @@ footer {
     justify-content: center;
   }
   .center a {
-    font-size: 22px;
+    color: white;
+    font-size: 25px;
   }
   .menu {
     display: block;
@@ -319,6 +332,7 @@ footer {
   .hero {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
   h1 {
     font-size: 29px;
@@ -383,17 +397,17 @@ footer {
   .product-item:nth-child(6) {
     display: none;
   }
-  .products h6 {
-    font-weight: 500;
-  }
   .more-offers {
-    position: absolute;
-    bottom: -147%;
+    position: relative;
+    bottom: -655px;
     margin: 0;
   }
   .white div {
     display: flex;
     justify-content: center;
+  }
+  .white {
+    height: 910px;
   }
   footer {
     height: 150px;
@@ -412,5 +426,17 @@ footer {
     margin: 0;
     align-items: center;
   }
+  small {
+    font-size: 10px;
+  }
   /* NEXT TYM:! play around with the navbar and give menu functionality then reduce the text size ig better try using the clamp() */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(90deg);
+  }
 }
