@@ -1,0 +1,222 @@
+// Global Colors
+$yellow: #D9A711;
+$black: #0D0D0D;
+$white: #F2F2F2;
+
+// Global Fonts
+$montserrat: 'Montserrat', sans-serif;
+$poppins: 'Poppins', sans-serif;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $white;  
+    margin: auto;
+    max-width: 1350px;
+    padding: 0 20px;
+}
+
+ul.navbar {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    overflow: hidden;
+    padding: 25px 60px 25px 60px;
+
+    /* Style for the navigation links */
+    li a {
+        display: block;
+        color: $black;
+        font-family: $montserrat;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.3px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    /* Change link color when hovered over */
+    li a:hover {
+        color: $yellow;
+    }
+}
+
+#heroSection {
+    display: flex;
+    height: 580px;
+
+    .rotateLink{
+        transform-origin: left;
+        display: inline-block;
+        transform: rotate(270deg);
+        width: 130px;
+    }
+
+    .gmail, .contact{
+        width: 15px;
+    }
+
+    .gmail a, .contact a{
+        font-family: $poppins;
+        font-weight: 300;
+        font-style: italic;
+        text-decoration: none;
+        color: $black;
+    }
+
+    .gmail a:hover, .contact a:hover{
+        color: $yellow;
+        text-shadow: 2px 2px 6px rgba($black, 10%);
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding-bottom: 20px;
+    }
+
+    .gmail{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding: 270px 0 0 15px;
+    }  
+}
+
+#heroSection .main{
+    background-color: $yellow;
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+
+    // Main div 1
+    .bigText{
+        display: flex;
+        flex-direction: column;
+        row-gap: 35px;
+        justify-content: center;
+        padding-bottom: 100px;
+
+        h1{
+            color: $white;
+            font-family: $montserrat;
+            font-weight: 400;
+            font-size: 85px;
+            text-transform: uppercase;
+            line-height: 85px;
+            text-shadow: 5px 5px 4px rgba($black, 50%);
+            letter-spacing: 1px;
+    
+            span {
+                letter-spacing: 6px;
+            }
+        }
+    
+        ul.heroButtons{
+            display: flex;
+            column-gap: 35px;
+            list-style-type: none;
+            padding-left: 10px;
+    
+            li a {
+                text-decoration: none;
+                font-family: $poppins;
+                font-weight: 500;
+                font-size: 16px;
+                color: $black;
+                letter-spacing: 0.3px;
+            }
+    
+            .workBtn a{
+                background-color: $white;
+                padding: 10px 40px;
+                border-radius: 5px;
+                box-shadow: 2px 2px 4px rgba($black, 40%);
+                
+
+                &:hover {
+                    background-color: $black;
+                    color: $white;
+                    box-shadow: none;
+                }
+            }
+    
+            .aboutBtn a{
+                display: flex;
+                column-gap: 7px;
+                align-items: center;
+                cursor: pointer;
+            }    
+        }
+
+    }
+
+    // Main div 2
+    .image{
+        position: relative;
+
+        img{
+            position: absolute;
+            left: -130px;
+            bottom: -35px;
+        }
+        
+    }
+
+    // Main div 3
+    .description{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .svgs {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            row-gap: 10px;
+
+            svg:hover g path{
+                fill: $black;
+                cursor: pointer;
+            }
+            svg {
+                cursor: pointer;
+            }
+        }
+
+        p {
+            font-family: $poppins;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 32px;
+            width: 360px;
+        }
+
+        
+    }
+}
+
+.linkTransition {
+    transition-duration: 0.3s;
+}
+
+.aboutBtnSVGRotate {
+    animation: aboutBtnSVGRotate 1s both;
+}
+
+
+@keyframes aboutBtnSVGRotate {
+    to {
+        transform: rotate(45deg);
+    }
+}
+
+

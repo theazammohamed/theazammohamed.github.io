@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F2F2F2;
+  margin: auto;
+  max-width: 1350px;
+  padding: 0 20px;
+}
+
+ul.navbar {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  overflow: hidden;
+  padding: 25px 60px 25px 60px;
+  /* Style for the navigation links */
+  /* Change link color when hovered over */
+}
+ul.navbar li a {
+  display: block;
+  color: #0D0D0D;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  text-align: center;
+  text-decoration: none;
+}
+ul.navbar li a:hover {
+  color: #D9A711;
+}
+
+#heroSection {
+  display: flex;
+  height: 580px;
+}
+#heroSection .rotateLink {
+  transform-origin: left;
+  display: inline-block;
+  transform: rotate(270deg);
+  width: 130px;
+}
+#heroSection .gmail, #heroSection .contact {
+  width: 15px;
+}
+#heroSection .gmail a, #heroSection .contact a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  text-decoration: none;
+  color: #0D0D0D;
+}
+#heroSection .gmail a:hover, #heroSection .contact a:hover {
+  color: #D9A711;
+  text-shadow: 2px 2px 6px rgba(13, 13, 13, 0.1);
+}
+#heroSection .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-bottom: 20px;
+}
+#heroSection .gmail {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 270px 0 0 15px;
+}
+
+#heroSection .main {
+  background-color: #D9A711;
+  width: 100%;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 35px;
+}
+#heroSection .main .bigText {
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+#heroSection .main .bigText h1 {
+  color: #F2F2F2;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 85px;
+  text-transform: uppercase;
+  line-height: 85px;
+  text-shadow: 5px 5px 4px rgba(13, 13, 13, 0.5);
+  letter-spacing: 1px;
+}
+#heroSection .main .bigText h1 span {
+  letter-spacing: 6px;
+}
+#heroSection .main .bigText ul.heroButtons {
+  display: flex;
+  -moz-column-gap: 35px;
+       column-gap: 35px;
+  list-style-type: none;
+  padding-left: 10px;
+}
+#heroSection .main .bigText ul.heroButtons li a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #0D0D0D;
+  letter-spacing: 0.3px;
+}
+#heroSection .main .bigText ul.heroButtons .workBtn a {
+  background-color: #F2F2F2;
+  padding: 10px 40px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(13, 13, 13, 0.4);
+}
+#heroSection .main .bigText ul.heroButtons .workBtn a:hover {
+  background-color: #0D0D0D;
+  color: #F2F2F2;
+  box-shadow: none;
+}
+#heroSection .main .bigText ul.heroButtons .aboutBtn a {
+  display: flex;
+  -moz-column-gap: 7px;
+       column-gap: 7px;
+  align-items: center;
+  cursor: pointer;
+}
+#heroSection .main .image {
+  position: relative;
+}
+#heroSection .main .image img {
+  position: absolute;
+  left: -130px;
+  bottom: -35px;
+}
+#heroSection .main .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#heroSection .main .description .svgs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 10px;
+}
+#heroSection .main .description .svgs svg:hover g path {
+  fill: #0D0D0D;
+  cursor: pointer;
+}
+#heroSection .main .description .svgs svg {
+  cursor: pointer;
+}
+#heroSection .main .description p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 32px;
+  width: 360px;
+}
+
+.linkTransition {
+  transition-duration: 0.3s;
+}
+
+.aboutBtnSVGRotate {
+  animation: aboutBtnSVGRotate 1s both;
+}
+
+@keyframes aboutBtnSVGRotate {
+  to {
+    transform: rotate(45deg);
+  }
+}/*# sourceMappingURL=style.css.map */
