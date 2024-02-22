@@ -220,3 +220,23 @@ ul.navbar {
 }
 
 
+@media screen and (max-width: 1250px) {
+    #heroSection .main{
+        flex-direction: column;
+
+        .description {
+            flex-direction: row-reverse;
+
+            .svgs {
+                justify-content: flex-end   ;
+            }
+        }
+        .image {
+            img {
+                left: 600px;
+                bottom: -215px;
+            }
+        }
+    }
+}
+

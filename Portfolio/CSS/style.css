@@ -178,4 +178,19 @@ ul.navbar li a:hover {
   to {
     transform: rotate(45deg);
   }
+}
+@media screen and (max-width: 1250px) {
+  #heroSection .main {
+    flex-direction: column;
+  }
+  #heroSection .main .description {
+    flex-direction: row-reverse;
+  }
+  #heroSection .main .description .svgs {
+    justify-content: flex-end;
+  }
+  #heroSection .main .image img {
+    left: 600px;
+    bottom: -215px;
+  }
 }/*# sourceMappingURL=style.css.map */
