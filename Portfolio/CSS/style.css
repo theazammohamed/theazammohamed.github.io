@@ -214,4 +214,7 @@ ul.navbar li a:hover {
     left: 510px;
     bottom: -35px;
   }
+  #heroSection .main .bigText {
+    z-index: 2;
+  }
 }/*# sourceMappingURL=style.css.map */
