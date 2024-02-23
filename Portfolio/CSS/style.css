@@ -193,4 +193,25 @@ ul.navbar li a:hover {
     left: 600px;
     bottom: -215px;
   }
+}
+@media screen and (max-width: 1040px) {
+  #heroSection .gmail {
+    display: none;
+  }
+  #heroSection .contact {
+    display: none;
+  }
+  #heroSection .main {
+    position: relative;
+  }
+  #heroSection .main .description {
+    flex-direction: column;
+    position: absolute;
+    width: 93%;
+    height: 88%;
+  }
+  #heroSection .main .image img {
+    left: 510px;
+    bottom: -35px;
+  }
 }/*# sourceMappingURL=style.css.map */

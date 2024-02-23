@@ -219,7 +219,7 @@ ul.navbar {
     }
 }
 
-
+// Responsive styles::Landing Page
 @media screen and (max-width: 1250px) {
     #heroSection .main{
         flex-direction: column;
@@ -240,3 +240,31 @@ ul.navbar {
     }
 }
 
+@media screen and (max-width: 1040px) {
+    #heroSection {
+        .gmail {
+            display: none;
+        }
+        .contact {
+            display: none;
+        }
+    }
+    
+    #heroSection .main {
+        position: relative;
+
+        .description {
+            flex-direction: column;
+            position: absolute;
+            width: 93%;
+            height: 88%;
+        }
+
+        .image {
+            img {
+                left: 510px;
+                bottom: -35px;
+            }
+        }
+    }
+}
