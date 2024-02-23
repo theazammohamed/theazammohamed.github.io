@@ -268,7 +268,9 @@ ul.navbar {
         }
 
         .bigText {
-            z-index: 2;
+            .heroButtons{
+                z-index: 2;
+            }
         }
     }
 }
