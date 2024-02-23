@@ -217,4 +217,13 @@ ul.navbar li a:hover {
   #heroSection .main .bigText .heroButtons {
     z-index: 2;
   }
+}
+@media screen and (max-width: 850px) {
+  .hideMobile {
+    display: none !important;
+  }
+  #heroSection .main .description {
+    display: flex;
+    justify-content: flex-end;
+  }
 }/*# sourceMappingURL=style.css.map */

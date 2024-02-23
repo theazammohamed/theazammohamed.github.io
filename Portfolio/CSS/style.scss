@@ -274,3 +274,17 @@ ul.navbar {
         }
     }
 }
+
+@media screen and (max-width: 850px) {
+    .hideMobile {
+        display: none !important;
+    }
+
+    #heroSection .main {
+
+        .description {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
