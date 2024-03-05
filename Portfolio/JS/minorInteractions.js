@@ -16,4 +16,8 @@ aboutBtn.addEventListener('mouseleave', () => {
     aboutBtnSVG.classList.remove("aboutBtnSVGRotate")
 })
 
+gsap.from(".navbar li", {y: 360, scale: 0, opacity: 0.5, duration: 0.8, delay:1.5, stagger: 0.2})
+
+gsap.from("#heroSection", {scale: 0.8, duration: 1.5})
+
 console.log("working");
