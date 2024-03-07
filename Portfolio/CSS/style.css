@@ -7,7 +7,7 @@
 body {
   background-color: #F2F2F2;
   margin: auto;
-  max-width: 1350px;
+  max-width: 1450px;
   padding: 0 20px;
 }
 
@@ -300,5 +300,31 @@ ul.heroButtons .aboutBtn a {
   }
   #heroSection .main .image img {
     position: unset;
+  }
+}
+@media screen and (max-width: 780px) {
+  #heroSection .main {
+    display: flex;
+  }
+  .image {
+    grid-row-start: 2 !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+  }
+  .image img {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #heroSection .main .bigText h1 {
+    font-size: 50px;
+    line-height: 45px;
+  }
+  #heroSection .main .desMobile .heroButtons .workBtn a {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  #heroSection .main .desMobile .heroButtons .aboutBtn a {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=style.css.map */
