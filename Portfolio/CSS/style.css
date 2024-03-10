@@ -301,6 +301,11 @@ ul.heroButtons .aboutBtn a {
   #heroSection .main .image img {
     position: unset;
   }
+  .mobileNav {
+    display: flex !important;
+    justify-content: flex-end;
+    padding-right: 10px;
+  }
 }
 @media screen and (max-width: 780px) {
   #heroSection .main {

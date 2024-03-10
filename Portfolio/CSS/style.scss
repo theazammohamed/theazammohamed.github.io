@@ -21,6 +21,8 @@ body {
     padding: 0 20px;
 }
 
+
+// Navbar Stylings
 ul.navbar {
     display: flex;
     justify-content: space-between;
@@ -45,6 +47,8 @@ ul.navbar {
         color: $yellow;
     }
 }
+
+
 
 #heroSection {
     display: flex;
@@ -210,6 +214,7 @@ ul.heroButtons{
     flex-direction: column;
 }
 
+
 .hideDesktop {
     display: none !important;
 }
@@ -371,6 +376,12 @@ ul.heroButtons{
                 position: unset;
             }
         }
+    }
+
+    .mobileNav {
+        display: flex !important;
+        justify-content: flex-end;
+        padding-right: 10px;
     }
 }
 
