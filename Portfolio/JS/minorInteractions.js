@@ -20,4 +20,50 @@ gsap.from(".navbar li", {y: 360, scale: 0, opacity: 0.5, duration: 0.8, delay:1.
 
 gsap.from("#heroSection", {scale: 0.8, duration: 1.5})
 
-console.log("working");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const openNav = document.querySelector(".mobileNav svg");
+const closeNav = document.querySelector(".navSlide .closeBtn")
+
+var open = gsap.timeline({duration: 0.1});
+
+open.paused(true);
+open.to(".navSlide", {xPercent: -100})
+
+openNav.addEventListener("click", () => {
+    open.play();
+    console.log('opened!');
+})
+
+var close = gsap.timeline({duration: 0.1});
+close.paused(true);
+close.to(".navSlide", {xPercent: 100});
+
+closeNav.addEventListener ("click", () => {
+    close.play();
+    console.log('closed!');
+})

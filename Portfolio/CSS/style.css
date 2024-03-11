@@ -34,6 +34,54 @@ ul.navbar li a:hover {
   color: #D9A711;
 }
 
+.navSlide {
+  background-color: #0D0D0D;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 100%;
+  z-index: 1;
+}
+.navSlide .slideNavbar {
+  padding-left: 25vw;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 23vh;
+  list-style-type: none;
+}
+.navSlide .slideNavbar li a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #F2F2F2;
+}
+.navSlide .slideNavbar li a:hover {
+  color: #D9A711;
+}
+.navSlide .closeBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+}
+.navSlide .closeBtn span {
+  color: #F2F2F2;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+.navSlide .svgs {
+  display: flex;
+  padding: 80px 0 0 25vw;
+  gap: 25px;
+}
+
 #heroSection {
   display: flex;
   height: 580px;
