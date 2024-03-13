@@ -51,14 +51,16 @@ const closeNav = document.querySelector(".navSlide .closeBtn")
 
 var open = gsap.timeline({duration: 0.1});
 
-open.paused(true);
-open.to(".navSlide", {xPercent: -100, ease:"expo.out"})
+open.paused(true)
+    .to(".navSlide", {xPercent: -100, duration: 0.5 ,ease:"expo.out"})
+    .from(".slideNavbar li", {x: 100, opacity: 0, stagger: 0.1})
+    .from(".navSlide .svgs a", {opacity: 0, stagger: 0.1})
 
 openNav.addEventListener("click", () => {
+    open.timeScale(1);
     open.play();
-    console.log('opened!');
 })
 
 closeNav.addEventListener ("click", () => {
-    open.reverse();
+    open.timeScale(4).reverse();
 })
