@@ -16,9 +16,9 @@ $poppins: 'Poppins', sans-serif;
 
 body {
     background-color: $white;  
-    margin: auto;
-    max-width: 1450px;
-    padding: 0 20px;
+    // margin: auto;
+    // max-width: 1450px;
+    // padding: 0 20px;
 }
 
 
@@ -29,6 +29,8 @@ ul.navbar {
     list-style-type: none;
     overflow: hidden;
     padding: 25px 60px 25px 60px;
+    margin: auto;
+    max-width: 1450px;
 
     /* Style for the navigation links */
     li a {
@@ -107,6 +109,9 @@ ul.navbar {
 #heroSection {
     display: flex;
     height: 580px;
+    max-width: 1450px;
+    padding: 0 20px;
+    margin: auto;
 
     .rotateLink{
         transform-origin: left;
@@ -361,6 +366,9 @@ ul.heroButtons{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 30px;
+        max-width: 1450px;
+        padding: 0 20px;
+        margin: auto;
 
         .bigText {
             background-color: $yellow;
@@ -482,3 +490,37 @@ ul.heroButtons{
         }
     }
 }
+
+
+// Gemini marquee test
+.marquee__part {
+    flex-shrink: 0;
+    padding: 0 4px;
+    font-smooth: always;
+  }
+  
+  .marquee {
+    color: #0D0D0D;
+    font-family: $montserrat;
+    font-weight: 400;
+    font-size: 60px;
+    margin: 32px 0;
+    width: 99vw;
+    left: 0;
+    overflow: hidden;
+    transform: rotate(-5deg);
+  }
+  
+  .marquee__inner {
+    -webkit-font-smoothing: antialiased;
+      width: fit-content;
+      display: flex;
+      flex: auto;
+      flex-direction: row;
+    transform: translate(0%, 0%)!important;
+  }
+  
+  .spacer {
+    height: 150px;
+  } 
+  

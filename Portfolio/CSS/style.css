@@ -6,9 +6,6 @@
 
 body {
   background-color: #F2F2F2;
-  margin: auto;
-  max-width: 1450px;
-  padding: 0 20px;
 }
 
 ul.navbar {
@@ -17,6 +14,8 @@ ul.navbar {
   list-style-type: none;
   overflow: hidden;
   padding: 25px 60px 25px 60px;
+  margin: auto;
+  max-width: 1450px;
   /* Style for the navigation links */
   /* Change link color when hovered over */
 }
@@ -85,6 +84,9 @@ ul.navbar li a:hover {
 #heroSection {
   display: flex;
   height: 580px;
+  max-width: 1450px;
+  padding: 0 20px;
+  margin: auto;
 }
 #heroSection .rotateLink {
   transform-origin: left;
@@ -289,6 +291,9 @@ ul.heroButtons .aboutBtn a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    max-width: 1450px;
+    padding: 0 20px;
+    margin: auto;
   }
   #heroSection .main .bigText {
     background-color: #D9A711;
@@ -380,4 +385,35 @@ ul.heroButtons .aboutBtn a {
   #heroSection .main .desMobile .heroButtons .aboutBtn a {
     font-size: 14px;
   }
+}
+.marquee__part {
+  flex-shrink: 0;
+  padding: 0 4px;
+  font-smooth: always;
+}
+
+.marquee {
+  color: #0D0D0D;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  margin: 32px 0;
+  width: 99vw;
+  left: 0;
+  overflow: hidden;
+  transform: rotate(-5deg);
+}
+
+.marquee__inner {
+  -webkit-font-smoothing: antialiased;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+  transform: translate(0%, 0%) !important;
+}
+
+.spacer {
+  height: 150px;
 }/*# sourceMappingURL=style.css.map */
