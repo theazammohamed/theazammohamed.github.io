@@ -496,15 +496,17 @@ ul.heroButtons{
 .marquee__part {
     flex-shrink: 0;
     padding: 0 4px;
-    font-smooth: always;
   }
   
   .marquee {
-    color: #0D0D0D;
+    display: flex;
+    flex-direction: column;
+    color: $yellow;
+    filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.2));
     font-family: $montserrat;
     font-weight: 400;
-    font-size: 60px;
-    margin: 32px 0;
+    font-size: 50px;
+    margin: 80px 0;
     width: 99vw;
     left: 0;
     overflow: hidden;
@@ -523,4 +525,24 @@ ul.heroButtons{
   .spacer {
     height: 150px;
   } 
+
+  .marquee__part__combi {
+    flex-shrink: 0;
+    padding: 0 4px;
+    color: $black;
+    filter: drop-shadow(5px 5px 3px rgba(240, 186, 0, 0.5));
+    font-family: $montserrat;
+    font-weight: 400;
+    font-size: 70px;
+    overflow: hidden;
+  }
+
+  .marquee__inner__combi {
+    -webkit-font-smoothing: antialiased;
+      width: fit-content;
+      display: flex;
+      flex: auto;
+      flex-direction: row;
+    transform: translate(-50%, 0%)!important;
+  }
   

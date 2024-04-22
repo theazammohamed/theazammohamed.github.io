@@ -66,13 +66,17 @@ closeNav.addEventListener ("click", () => {
 })
 
 
-// Gemini Marquee test
+// Marquee test
 let currentScroll = 0;
 let isScrollingDown = true;
 
 let tween = gsap.to(".marquee__part", {xPercent: -100, repeat: -1, duration: 10, ease: "linear"}).totalProgress(0.5);
 
+let tweenCombi = gsap.to(".marquee__part__combi", {xPercent: 100, repeat: -1, duration: 10, ease: "linear"}).totalProgress(0.5);
+
 gsap.set(".marquee__inner", {xPercent: -50});
+
+gsap.set(".marquee__inner__combi", {xPercent: -50});
 
 window.addEventListener("scroll", function(){
   
@@ -86,5 +90,10 @@ window.addEventListener("scroll", function(){
     timeScale: isScrollingDown ? 1 : -1
   });
   
+  gsap.to(tweenCombi, {
+    timeScale: isScrollingDown ? 1 : -1
+  });
+  
+
   currentScroll = window.pageYOffset
 });
