@@ -1,26 +1,57 @@
+// More About Me Btn >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
 const aboutBtn = document.querySelector(".aboutBtn");
-const aboutBtnText = document.querySelector(".aboutBtn a");
-const aboutBtnSVGPath = document.querySelector(".aboutBtn svg path");
-const aboutBtnSVG = document.querySelector(".aboutBtn svg");
 
-aboutBtn.addEventListener('mouseover', () => {
-    aboutBtnSVGPath.setAttribute("fill", "#F2F2F2");
-    aboutBtnText.style.color = 'white';
-    aboutBtnText.style.textShadow = "2px 2px 1px rgba($black, 100%)";
-    aboutBtnSVG.classList.add("aboutBtnSVGRotate");
+const aboutHover = gsap.timeline({ paused: true })
+  .to(aboutBtn.querySelector("a"), { 
+      duration: 0.3, 
+      color: "white", 
+      textShadow: "2px 2px 1px rgba(0, 0, 0, 0.5)", 
+      ease: "power2.inOut" 
+  })
+  .to(aboutBtn.querySelector("svg path"), { 
+      duration: 0.3, 
+      fill: "#F2F2F2",
+      ease: "power2.inOut" 
+  }, "<")
+  .to(aboutBtn.querySelector("svg"), { 
+      duration: 0.3, 
+      rotation: 45, 
+      ease: "power2.inOut"
+  }, "<");
+
+aboutBtn.addEventListener("mouseenter", () => aboutHover.play());
+aboutBtn.addEventListener("mouseleave", () => aboutHover.reverse());
+
+// Landing Page SVGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+const landingSVG = document.querySelectorAll(".description .svgs svg");
+
+landingSVG.forEach((landingSVG) => {
+  const landingSVGHover = gsap.timeline({paused: true});
+
+  const svgPaths = landingSVG.querySelectorAll("svg path.linkTransition");
+
+  svgPaths.forEach((path) => {
+    landingSVGHover.to(path, {
+      duration: 0.3,
+      scale: 1.06,
+      fill: "#0D0D0D",
+      ease: "power2.inOut" 
+    });
+  });
+
+  landingSVG.addEventListener("mouseenter", () => landingSVGHover.play());
+  landingSVG.addEventListener("mouseleave", () => landingSVGHover.reverse());
 });
 
-aboutBtn.addEventListener('mouseleave', () => {
-    aboutBtnSVGPath.setAttribute("fill", "#000000")
-    aboutBtnText.style.color = 'black';
-    aboutBtnSVG.classList.remove("aboutBtnSVGRotate")
-})
-
-gsap.from(".navbar li", {y: 360, scale: 0, opacity: 0.5, duration: 0.8, delay:1.5, stagger: 0.2})
-
-gsap.from("#heroSection", {scale: 0.8, duration: 1.5})
 
 
+
+
+// Navbar Entry
+gsap.from(".navbar li", {y: 360, scale: 0, opacity: 0.5, duration: 0.8, delay:0.1, stagger: 0.2})
+
+// Landing Section Entry
+gsap.from("#heroSection", {opacity: 0, duration: 2})
 
 
 
@@ -46,6 +77,8 @@ gsap.from("#heroSection", {scale: 0.8, duration: 1.5})
 
 
 
+
+// Navbar Open / Close
 const openNav = document.querySelector(".mobileNav svg");
 const closeNav = document.querySelector(".navSlide .closeBtn")
 
@@ -97,3 +130,5 @@ window.addEventListener("scroll", function(){
 
   currentScroll = window.pageYOffset
 });
+
+// Smooth Scrolling

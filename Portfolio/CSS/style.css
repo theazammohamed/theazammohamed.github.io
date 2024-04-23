@@ -6,6 +6,15 @@
 
 body {
   background-color: #F2F2F2;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-left: -3px;
 }
 
 ul.navbar {
@@ -168,10 +177,6 @@ ul.navbar li a:hover {
   align-items: flex-end;
   row-gap: 10px;
 }
-#heroSection .main .description .svgs svg:hover g path {
-  fill: #0D0D0D;
-  cursor: pointer;
-}
 #heroSection .main .description .svgs svg {
   cursor: pointer;
 }
@@ -224,10 +229,6 @@ ul.heroButtons .aboutBtn a {
 
 .hideDesktop {
   display: none !important;
-}
-
-.linkTransition {
-  transition-duration: 0.3s;
 }
 
 .aboutBtnSVGRotate {
@@ -394,16 +395,18 @@ ul.heroButtons .aboutBtn a {
 .marquee {
   display: flex;
   flex-direction: column;
-  color: #D9A711;
-  filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.2));
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 50px;
-  margin: 80px 0;
   width: 99vw;
   left: 0;
   overflow: hidden;
   transform: rotate(-5deg);
+}
+.marquee .htmlSVG {
+  margin-left: 50px;
+}
+.marquee .designSVG {
+  margin: 20px 50px 0 0;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .marquee__inner {
@@ -414,6 +417,11 @@ ul.heroButtons .aboutBtn a {
   flex: auto;
   flex-direction: row;
   transform: translate(0%, 0%) !important;
+  color: #D9A711;
+  filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.2));
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
 }
 
 .spacer {
@@ -424,7 +432,7 @@ ul.heroButtons .aboutBtn a {
   flex-shrink: 0;
   padding: 0 4px;
   color: #0D0D0D;
-  filter: drop-shadow(5px 5px 3px rgba(240, 186, 0, 0.5));
+  filter: drop-shadow(5px 5px 3px rgba(217, 167, 17, 0.5));
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 70px;
@@ -439,4 +447,31 @@ ul.heroButtons .aboutBtn a {
   flex: auto;
   flex-direction: row;
   transform: translate(-50%, 0%) !important;
+}
+
+.about {
+  display: flex;
+  max-width: 1450px;
+  padding: 0 20px;
+  margin: auto;
+}
+.about span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.about p {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 200;
+}
+.about .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 20px 0 50px;
 }/*# sourceMappingURL=style.css.map */

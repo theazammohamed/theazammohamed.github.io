@@ -15,10 +15,19 @@ $poppins: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: $white;  
+    background-color: $white;
+    overflow-x: hidden;  
     // margin: auto;
     // max-width: 1450px;
     // padding: 0 20px;
+}
+
+h2 {
+    font-family: $poppins;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-left: -3px;
 }
 
 
@@ -51,7 +60,7 @@ ul.navbar {
 }
 
 .navSlide {
-    background-color: #0D0D0D;
+    background-color: $black;
     width: 100vw;
     height: 100vh;
     position:fixed;
@@ -211,8 +220,8 @@ ul.navbar {
             row-gap: 10px;
 
             svg:hover g path{
-                fill: $black;
-                cursor: pointer;
+                // fill: $black;
+                // cursor: pointer;
             }
             svg {
                 cursor: pointer;
@@ -276,10 +285,6 @@ ul.heroButtons{
 
 .hideDesktop {
     display: none !important;
-}
-
-.linkTransition {
-    transition-duration: 0.3s;
 }
 
 .aboutBtnSVGRotate {
@@ -492,7 +497,7 @@ ul.heroButtons{
 }
 
 
-// Gemini marquee test
+// marquee test
 .marquee__part {
     flex-shrink: 0;
     padding: 0 4px;
@@ -501,16 +506,20 @@ ul.heroButtons{
   .marquee {
     display: flex;
     flex-direction: column;
-    color: $yellow;
-    filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.2));
-    font-family: $montserrat;
-    font-weight: 400;
-    font-size: 50px;
-    margin: 80px 0;
     width: 99vw;
     left: 0;
     overflow: hidden;
     transform: rotate(-5deg);
+
+    .htmlSVG {
+        margin-left: 50px;
+    }
+
+    .designSVG {
+        margin: 20px 50px 0 0;
+        display: flex;
+        justify-content: flex-end;
+    }
   }
   
   .marquee__inner {
@@ -520,6 +529,11 @@ ul.heroButtons{
       flex: auto;
       flex-direction: row;
     transform: translate(0%, 0%)!important;
+    color: $yellow;
+    filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.2));
+    font-family: $montserrat;
+    font-weight: 400;
+    font-size: 50px;
   }
   
   .spacer {
@@ -530,7 +544,7 @@ ul.heroButtons{
     flex-shrink: 0;
     padding: 0 4px;
     color: $black;
-    filter: drop-shadow(5px 5px 3px rgba(240, 186, 0, 0.5));
+    filter: drop-shadow(5px 5px 3px rgba(217,167,17, 0.5));
     font-family: $montserrat;
     font-weight: 400;
     font-size: 70px;
@@ -544,5 +558,37 @@ ul.heroButtons{
       flex: auto;
       flex-direction: row;
     transform: translate(-50%, 0%)!important;
+  }
+
+
+  // About Section
+  .about {
+    display: flex;
+    max-width: 1450px;
+    padding: 0 20px;
+    margin: auto;
+
+    span {
+        font-family: $montserrat;
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-family: $poppins;
+        font-size: 22px;
+        line-height: 32px;
+        font-weight: 200;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 20px 0 50px;
+    }
   }
   
