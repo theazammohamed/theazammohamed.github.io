@@ -449,13 +449,13 @@ ul.heroButtons .aboutBtn a {
   transform: translate(-50%, 0%) !important;
 }
 
-.about {
+#about {
   display: flex;
   max-width: 1450px;
   padding: 0 20px;
   margin: auto;
 }
-.about span {
+#about span {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -463,15 +463,31 @@ ul.heroButtons .aboutBtn a {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-.about p {
+#about .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 20px 0 50px;
+}
+#about .description p {
   font-family: "Poppins", sans-serif;
   font-size: 22px;
   line-height: 32px;
   font-weight: 200;
 }
-.about .description {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 20px 0 50px;
+
+@media screen and (max-width: 1040px) {
+  #about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #about .description {
+    margin: 0;
+    text-align: center;
+    align-items: center;
+  }
+  #about .description p {
+    width: 90%;
+  }
 }/*# sourceMappingURL=style.css.map */
