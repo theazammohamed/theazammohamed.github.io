@@ -590,6 +590,12 @@ ul.heroButtons{
             font-weight: 200;
         }
     }
+
+    .aboutIMG {
+        img {
+            width: 650px;
+        }
+    }
   }
 
   
@@ -609,6 +615,37 @@ ul.heroButtons{
                 width: 90%;
             }
         }
+
+        .aboutIMG {
+            align-items: center;
+            padding-top: 40px;
+
+            img {
+                width: 400px;
+            }
+        }
     }
 }
+
+
+//  Tech Stack Section
+.techStack {
+    margin: 200px 0 100px 0;
+
+    div {
+        align-items: center;
+    }
+    
+    .stackTitle {
+        font-family: $montserrat;
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        padding: 0 0 45px 100px;
+        max-width: 1450px;
+        align-items: center;
+    }
+}
+
   

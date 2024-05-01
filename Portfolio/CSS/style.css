@@ -475,6 +475,9 @@ ul.heroButtons .aboutBtn a {
   line-height: 32px;
   font-weight: 200;
 }
+#about .aboutIMG img {
+  width: 650px;
+}
 
 @media screen and (max-width: 1040px) {
   #about {
@@ -490,4 +493,27 @@ ul.heroButtons .aboutBtn a {
   #about .description p {
     width: 90%;
   }
+  #about .aboutIMG {
+    align-items: center;
+    padding-top: 40px;
+  }
+  #about .aboutIMG img {
+    width: 400px;
+  }
+}
+.techStack {
+  margin: 200px 0 100px 0;
+}
+.techStack div {
+  align-items: center;
+}
+.techStack .stackTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding: 0 0 45px 100px;
+  max-width: 1450px;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
