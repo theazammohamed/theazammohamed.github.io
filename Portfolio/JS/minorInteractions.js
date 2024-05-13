@@ -77,7 +77,6 @@ gsap.from("#heroSection", {opacity: 0, duration: 2})
 
 
 
-
 // Navbar Open / Close
 const openNav = document.querySelector(".mobileNav svg");
 const closeNav = document.querySelector(".navSlide .closeBtn")

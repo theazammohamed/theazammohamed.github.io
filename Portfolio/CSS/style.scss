@@ -637,8 +637,8 @@ ul.heroButtons{
 
 
 // Work XP Section
-.outer {
-    margin-top: 200px;
+#workXP {
+    margin-top: 300px;
 
     .xpTitle {
         margin: auto;
@@ -648,22 +648,24 @@ ul.heroButtons{
         flex-direction: column;
     }
 
-    .slider {
+    .inner-container {
+        margin-top: 30px;
         display: flex;
         gap: 35px;
+        overflow-x: scroll;
+        padding: 0 40px 20px 40px;
 
-        section {
+        div.inner {
             padding: 30px 50px;
             width: 800px;
             background-image: linear-gradient(125deg , rgba(240,186,0, 75%) , rgba(240,186,0, 20%));
             border: 1px solid $yellow;
             border-radius: 30px;
             flex-shrink: 0;
-
-            .inner {
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+                
 
                 h3 {
                     font-family: $montserrat;
@@ -688,9 +690,23 @@ ul.heroButtons{
                     letter-spacing: 0.3px;
                     text-decoration: none;
                 }
-            }
         }
     }
+
 }
 
+.inner-container::-webkit-scrollbar {
+    height: 5px!important;
+}
+
+.inner-container::-webkit-scrollbar-track {
+    background-color: rgba(160, 160, 160, 0.115);
+    border-radius: 10px;
+}
+                    
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: $yellow; 
+}
+    
   

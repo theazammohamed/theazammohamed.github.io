@@ -508,51 +508,66 @@ ul.heroButtons .aboutBtn a {
   align-items: center;
 }
 
-.outer {
-  margin-top: 200px;
+#workXP {
+  margin-top: 300px;
 }
-.outer .xpTitle {
+#workXP .xpTitle {
   margin: auto;
   max-width: 1450px;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
 }
-.outer .slider {
+#workXP .inner-container {
+  margin-top: 30px;
   display: flex;
   gap: 35px;
+  overflow-x: scroll;
+  padding: 0 40px 20px 40px;
 }
-.outer .slider section {
+#workXP .inner-container div.inner {
   padding: 30px 50px;
   width: 800px;
   background-image: linear-gradient(125deg, rgba(240, 186, 0, 0.75), rgba(240, 186, 0, 0.2));
   border: 1px solid #D9A711;
   border-radius: 30px;
   flex-shrink: 0;
-}
-.outer .slider section .inner {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.outer .slider section .inner h3 {
+#workXP .inner-container div.inner h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 35px;
   letter-spacing: 5px;
   text-transform: uppercase;
 }
-.outer .slider section .inner p {
+#workXP .inner-container div.inner p {
   font-family: "Poppins", sans-serif;
   font-size: 22px;
   line-height: 32px;
   font-weight: 200;
 }
-.outer .slider section .inner a {
+#workXP .inner-container div.inner a {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: #0D0D0D;
   letter-spacing: 0.3px;
   text-decoration: none;
+}
+
+.inner-container::-webkit-scrollbar {
+  height: 5px !important;
+}
+
+.inner-container::-webkit-scrollbar-track {
+  background-color: rgba(160, 160, 160, 0.115);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #D9A711;
 }/*# sourceMappingURL=style.css.map */
