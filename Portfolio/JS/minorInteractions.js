@@ -1,26 +1,60 @@
 // More About Me Btn >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
-const aboutBtn = document.querySelector(".aboutBtn");
+// const aboutBtn = document.querySelectorAll(".aboutBtn");
 
-const aboutHover = gsap.timeline({ paused: true })
+// const aboutHover = gsap.timeline({ paused: true })
+  // .to(aboutBtn.querySelector("a"), { 
+  //     duration: 0.3, 
+  //     color: "white", 
+  //     textShadow: "2px 2px 1px rgba(0, 0, 0, 0.5)", 
+  //     ease: "power2.inOut" 
+  // })
+  // .to(aboutBtn.querySelector("svg path"), { 
+  //     duration: 0.3, 
+  //     fill: "#F2F2F2",
+  //     ease: "power2.inOut" 
+  // }, "<")
+  // .to(aboutBtn.querySelector("svg"), { 
+  //     duration: 0.3, 
+  //     rotation: 45, 
+  //     ease: "power2.inOut"
+  // }, "<");
+
+// aboutBtn.addEventListener("mouseenter", () => aboutHover.play());
+// aboutBtn.addEventListener("mouseleave", () => aboutHover.reverse());
+
+const aboutBtn = document.querySelectorAll(".aboutBtn");
+
+aboutBtn.forEach((aboutBtn) => {
+  const aboutHover = gsap.timeline({ paused: true })
   .to(aboutBtn.querySelector("a"), { 
       duration: 0.3, 
-      color: "white", 
-      textShadow: "2px 2px 1px rgba(0, 0, 0, 0.5)", 
+      textDecoration: "underline",
       ease: "power2.inOut" 
   })
-  .to(aboutBtn.querySelector("svg path"), { 
-      duration: 0.3, 
-      fill: "#F2F2F2",
-      ease: "power2.inOut" 
-  }, "<")
   .to(aboutBtn.querySelector("svg"), { 
       duration: 0.3, 
-      rotation: 45, 
+      x: "3px",
+      y: "-3px",
       ease: "power2.inOut"
   }, "<");
 
-aboutBtn.addEventListener("mouseenter", () => aboutHover.play());
-aboutBtn.addEventListener("mouseleave", () => aboutHover.reverse());
+  aboutBtn.addEventListener("mouseenter", () => aboutHover.play());
+  aboutBtn.addEventListener("mouseleave", () => aboutHover.reverse());
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Landing Page SVGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 const landingSVG = document.querySelectorAll(".description .svgs svg");

@@ -526,7 +526,7 @@ ul.heroButtons .aboutBtn a {
   padding: 0 40px 20px 40px;
 }
 #workXP .inner-container div.inner {
-  padding: 30px 50px;
+  padding: 35px 50px;
   width: 800px;
   background-image: linear-gradient(125deg, rgba(240, 186, 0, 0.75), rgba(240, 186, 0, 0.2));
   border: 1px solid #D9A711;
@@ -534,7 +534,7 @@ ul.heroButtons .aboutBtn a {
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 #workXP .inner-container div.inner h3 {
   font-family: "Montserrat", sans-serif;
@@ -542,6 +542,7 @@ ul.heroButtons .aboutBtn a {
   font-size: 35px;
   letter-spacing: 5px;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 #workXP .inner-container div.inner p {
   font-family: "Poppins", sans-serif;
@@ -556,6 +557,36 @@ ul.heroButtons .aboutBtn a {
   color: #0D0D0D;
   letter-spacing: 0.3px;
   text-decoration: none;
+}
+#workXP .inner-container div.inner .workHeading {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#workXP .inner-container div.inner .workHeading .workSubhead {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+#workXP .inner-container div.inner .workContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  height: 100%;
+}
+#workXP .inner-container div.inner .workContent .aboutBtn a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #0D0D0D;
+  letter-spacing: 0.3px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  text-transform: capitalize;
 }
 
 .inner-container::-webkit-scrollbar {
