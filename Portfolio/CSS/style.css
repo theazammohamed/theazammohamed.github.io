@@ -601,4 +601,17 @@ ul.heroButtons .aboutBtn a {
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #D9A711;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+footer .footerContent {
+  display: flex;
+}
+footer form {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
 }/*# sourceMappingURL=style.css.map */

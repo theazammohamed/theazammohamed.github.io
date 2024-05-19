@@ -745,5 +745,20 @@ ul.heroButtons{
     border-radius: 10px;
     background-color: $yellow; 
 }
-    
+  
+// Footer
+footer {
+    display: flex;
+    flex-direction: column;
+
+    .footerContent {
+        display: flex;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 0;
+    }
+}
   
