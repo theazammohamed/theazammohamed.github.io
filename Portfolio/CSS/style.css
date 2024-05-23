@@ -604,14 +604,97 @@ ul.heroButtons .aboutBtn a {
 }
 
 footer {
+  background-color: #D9A711;
+  border-radius: 60px 60px 0 0;
   display: flex;
   flex-direction: column;
+  padding-top: 60px;
+}
+footer .footerH {
+  max-width: 1450px;
+  padding: 0 15% 50px 15%;
+}
+footer .footerH h2 {
+  width: 380px;
+  line-height: 55px;
 }
 footer .footerContent {
   display: flex;
+  justify-content: space-between;
+  padding: 0 15% 70px 15%;
+}
+footer .footerContent .mail, footer .footerContent .telephone, footer .footerContent .socials {
+  display: flex;
+  flex-direction: column;
+}
+footer .footerContent .mail a, footer .footerContent .telephone a {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #0D0D0D;
+  text-decoration: none;
+}
+footer .footerContent span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+footer .footerContent .contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+footer .footerContent .socials span {
+  padding-bottom: 5px;
+}
+footer .footerContent .socials .svgs {
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
 footer form {
   display: flex;
   flex-direction: column;
   flex-grow: 0;
+  width: 650px;
+  gap: 15px;
+  padding-left: 40px;
+}
+footer form input, footer form textarea {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 200;
+  padding: 5px;
+}
+footer form textarea {
+  height: 80px;
+}
+footer form button {
+  background-color: #0D0D0D;
+  padding: 10px 40px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(13, 13, 13, 0.4);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #F2F2F2;
+  letter-spacing: 0.3px;
+  width: 150px;
+  border: none;
+  cursor: pointer;
+}
+footer .footerBottom {
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  background-color: #F2F2F2;
+  padding: 10px 0;
 }/*# sourceMappingURL=style.css.map */

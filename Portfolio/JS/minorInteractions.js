@@ -167,13 +167,24 @@ window.addEventListener("scroll", function(){
 // Lenis Smooth Scrolling
 const lenis = new Lenis()
 
-lenis.on('scroll', (e) => {
-  console.log(e)
-})
-
 function raf(time) {
   lenis.raf(time)
   requestAnimationFrame(raf)
 }
 
 requestAnimationFrame(raf)
+
+// draggable horizontal section
+// const workXP = document.querySelector("#workXP");
+// const draggableElements = workXP.querySelectorAll(".inner");
+
+// draggableElements.forEach(element => {
+//   Draggable.create(element, {
+//     // Enable dragging on the entire element
+//     drag: true
+//   });
+// });
+
+// Draggable.create(workXP.querySelector(".inner-container"), {
+//   drag: true
+// });
