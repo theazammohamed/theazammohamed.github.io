@@ -603,6 +603,56 @@ ul.heroButtons .aboutBtn a {
   background-color: #D9A711;
 }
 
+.gallery {
+  display: flex;
+  padding: 150px 20px;
+  margin: auto;
+  max-width: 1450px;
+  gap: 175px;
+}
+.gallery .photos {
+  gap: 15px;
+  display: flex;
+}
+.gallery .photos .rightg {
+  display: grid;
+  justify-items: end;
+  gap: 15px;
+}
+.gallery .photos .rightg img {
+  border-radius: 15px;
+}
+.gallery .photos .leftg {
+  display: grid;
+  grid-auto-rows: max-content;
+  gap: 15px;
+}
+.gallery .photos .leftg img {
+  border-radius: 15px;
+}
+.gallery .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.gallery .description h2 {
+  text-align: end;
+}
+.gallery .description span {
+  display: block;
+  text-align: end;
+  margin-bottom: 30px;
+}
+.gallery .description p {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 200;
+  text-align: end;
+  padding-bottom: 20px;
+}
+
 footer {
   background-color: #D9A711;
   border-radius: 60px 60px 0 0;

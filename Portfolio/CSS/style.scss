@@ -8,6 +8,7 @@ $montserrat: 'Montserrat', sans-serif;
 $poppins: 'Poppins', sans-serif;
 
 
+
 * {
     margin: 0;
     padding: 0;
@@ -745,6 +746,86 @@ ul.heroButtons{
     border-radius: 10px;
     background-color: $yellow; 
 }
+
+
+
+
+
+// Gallery Test
+
+
+
+
+.gallery {
+    display: flex;
+    padding: 150px 20px;
+    margin: auto;
+    max-width: 1450px;
+    gap: 175px;
+
+
+    .photos {
+        gap: 15px;
+        display: flex;
+
+        .rightg {
+            display: grid;
+            justify-items: end;
+            gap: 15px;
+
+            img {
+                border-radius: 15px;
+            }
+        }
+        .leftg {
+            display: grid;
+            grid-auto-rows: max-content;
+            gap: 15px;
+
+            img {
+                border-radius: 15px;
+            }
+        }
+    }
+
+    .description{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+            text-align: end;
+        } 
+        span {
+            display: block;
+            text-align: end;
+            margin-bottom: 30px;
+        }
+        p {
+            display: block;
+            font-family: $poppins;
+            font-size: 22px;
+            line-height: 32px;
+            font-weight: 200;
+            text-align: end;
+            padding-bottom: 20px;
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 // Footer
 footer {
