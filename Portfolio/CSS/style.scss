@@ -568,7 +568,7 @@ ul.heroButtons{
   #about {
     display: flex;
     max-width: 1450px;
-    padding: 0 20px;
+    padding: 100px 20px 50px 20px;
     margin: auto;
 
     .description {
@@ -622,6 +622,34 @@ ul.heroButtons{
 }
 
 
+// Projects Section
+#projects {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        font-family: $poppins;
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: 200;
+        text-align: center;
+        line-height: 60px;
+        color: $black;
+
+        a {
+            background-color: $yellow;
+            color: $black;
+            border: 1px solid $black;
+            padding: 0 20px;
+            border-radius: 50px;
+            text-decoration: none;
+        }
+    }
+}
+
+
 //  Tech Stack Section
 .techStack {
     margin: 200px 0 100px 0;
@@ -639,7 +667,7 @@ ul.heroButtons{
 
 // Work XP Section
 #workXP {
-    margin-top: 300px;
+    padding: 100px 0;
 
     .xpTitle {
         margin: auto;
@@ -751,11 +779,7 @@ ul.heroButtons{
 
 
 
-// Gallery Test
-
-
-
-
+// Gallery Section
 .gallery {
     display: flex;
     padding: 150px 20px;
@@ -814,6 +838,21 @@ ul.heroButtons{
     
 }
 
+
+// Gallery Section:: Responsiveness
+@media screen and (max-width: 1040px) {
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+
+        h2, span, p {
+            text-align: center !important;
+        }
+    }
+}
 
 
 
@@ -943,3 +982,16 @@ footer {
     }
 }
   
+// Footer :: Responsiveness
+@media screen and (max-width: 1040px) {
+    footer {
+        .footerContent {
+            flex-wrap: wrap;
+            gap: 50px;
+
+            form {
+                padding-left: 0;
+            }
+        }
+    }
+}

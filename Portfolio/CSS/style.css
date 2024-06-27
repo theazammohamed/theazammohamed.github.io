@@ -455,7 +455,7 @@ ul.heroButtons .aboutBtn a {
 #about {
   display: flex;
   max-width: 1450px;
-  padding: 0 20px;
+  padding: 100px 20px 50px 20px;
   margin: auto;
 }
 #about .description {
@@ -496,6 +496,30 @@ ul.heroButtons .aboutBtn a {
     width: 400px;
   }
 }
+#projects {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+#projects div {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 200;
+  text-align: center;
+  line-height: 60px;
+  color: #0D0D0D;
+}
+#projects div a {
+  background-color: #D9A711;
+  color: #0D0D0D;
+  border: 1px solid #0D0D0D;
+  padding: 0 20px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
 .techStack {
   margin: 200px 0 100px 0;
 }
@@ -509,7 +533,7 @@ ul.heroButtons .aboutBtn a {
 }
 
 #workXP {
-  margin-top: 300px;
+  padding: 100px 0;
 }
 #workXP .xpTitle {
   margin: auto;
@@ -653,6 +677,18 @@ ul.heroButtons .aboutBtn a {
   padding-bottom: 20px;
 }
 
+@media screen and (max-width: 1040px) {
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+  }
+  .gallery h2, .gallery span, .gallery p {
+    text-align: center !important;
+  }
+}
 footer {
   background-color: #D9A711;
   border-radius: 60px 60px 0 0;
@@ -747,4 +783,14 @@ footer .footerBottom {
   text-transform: uppercase;
   background-color: #F2F2F2;
   padding: 10px 0;
+}
+
+@media screen and (max-width: 1040px) {
+  footer .footerContent {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  footer .footerContent form {
+    padding-left: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

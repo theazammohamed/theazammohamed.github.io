@@ -1,27 +1,3 @@
-// More About Me Btn >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
-// const aboutBtn = document.querySelectorAll(".aboutBtn");
-
-// const aboutHover = gsap.timeline({ paused: true })
-  // .to(aboutBtn.querySelector("a"), { 
-  //     duration: 0.3, 
-  //     color: "white", 
-  //     textShadow: "2px 2px 1px rgba(0, 0, 0, 0.5)", 
-  //     ease: "power2.inOut" 
-  // })
-  // .to(aboutBtn.querySelector("svg path"), { 
-  //     duration: 0.3, 
-  //     fill: "#F2F2F2",
-  //     ease: "power2.inOut" 
-  // }, "<")
-  // .to(aboutBtn.querySelector("svg"), { 
-  //     duration: 0.3, 
-  //     rotation: 45, 
-  //     ease: "power2.inOut"
-  // }, "<");
-
-// aboutBtn.addEventListener("mouseenter", () => aboutHover.play());
-// aboutBtn.addEventListener("mouseleave", () => aboutHover.reverse());
-
 const aboutBtn = document.querySelectorAll(".aboutBtn");
 
 aboutBtn.forEach((aboutBtn) => {
@@ -41,19 +17,6 @@ aboutBtn.forEach((aboutBtn) => {
   aboutBtn.addEventListener("mouseenter", () => aboutHover.play());
   aboutBtn.addEventListener("mouseleave", () => aboutHover.reverse());
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // Landing Page SVGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -77,38 +40,11 @@ landingSVG.forEach((landingSVG) => {
   landingSVG.addEventListener("mouseleave", () => landingSVGHover.reverse());
 });
 
-
-
-
-
 // Navbar Entry
 gsap.from(".navbar li", {y: 360, scale: 0, opacity: 0.5, duration: 0.8, delay:0.1, stagger: 0.2})
 
 // Landing Section Entry
 gsap.from("#heroSection", {opacity: 0, duration: 2})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // Navbar Open / Close
