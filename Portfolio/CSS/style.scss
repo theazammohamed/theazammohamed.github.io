@@ -32,6 +32,7 @@ h2 {
 }
 
 span.subH {
+    display: block;
     font-family: $montserrat;
     font-size: 16px;
     font-weight: 300;
@@ -40,6 +41,12 @@ span.subH {
     margin-bottom: 30px;
 }
 
+p {
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 200;
+}
 
 // Navbar Stylings
 ul.navbar {
@@ -621,6 +628,98 @@ ul.heroButtons{
     }
 }
 
+// Education Section
+#education {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 70px;
+    max-width: 1450px;
+    padding: 200px 20px 100px 20px;
+    margin: auto;
+    justify-content: space-between;
+
+    .edTitle {
+        position: sticky;
+        top: 50px;
+        text-align: end;
+    }
+
+    .edTimeline {
+        .inner-container {
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+    
+            div.inner {
+                padding: 35px 50px;
+                width: 800px;
+                background-image: linear-gradient(125deg , rgba(240,186,0, 75%) , rgba(240,186,0, 20%));
+                border: 1px solid $yellow;
+                border-radius: 30px;
+                flex-shrink: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                    
+    
+                    h3 {
+                        font-family: $montserrat;
+                        font-weight: 500;
+                        font-size: 35px;
+                        letter-spacing: 5px;
+                        text-transform: uppercase;
+                        margin-bottom: 20px;
+                    }
+    
+                    a {
+                        font-family: "Poppins", sans-serif;
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: #0D0D0D;
+                        letter-spacing: 0.3px;
+                        text-decoration: none;
+                    }
+    
+                    .workHeading {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+    
+                        .workSubhead {
+                            font-family: $montserrat;
+                            font-size: 16px;
+                            font-weight: 300;
+                            letter-spacing: 5px;
+                            text-transform: uppercase;
+                        }
+                    }
+    
+                    .workContent {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        justify-content: space-between;
+                        height: 100%;
+    
+                        .aboutBtn {
+                            a {
+                                font-family: "Poppins", sans-serif;
+                                font-weight: 500;
+                                font-size: 16px;
+                                color: $black;
+                                letter-spacing: 0.3px;
+                                display: flex;
+                                align-items: center;
+                                gap: 7px;
+                                text-transform: capitalize;
+                            }   
+                        }
+                    }
+            }
+        }
+    }
+}
+
 
 // Projects Section
 #projects {
@@ -667,112 +766,92 @@ ul.heroButtons{
 
 // Work XP Section
 #workXP {
-    padding: 100px 0;
+    display: flex;
+    gap: 70px;
+    max-width: 1450px;
+    padding: 200px 20px 100px 20px;
+    margin: auto;
+    justify-content: space-between;
 
-    .xpTitle {
-        margin: auto;
-        max-width: 1450px;
-        padding: 0 20px;
-        display: flex;
-        flex-direction: column;
+    .XPTitle {
+        position: sticky;
+        top: 50px;
     }
 
-    .inner-container {
-        margin-top: 30px;
-        display: flex;
-        gap: 35px;
-        overflow-x: scroll;
-        padding: 0 40px 20px 40px;
-
-        div.inner {
-            padding: 35px 50px;
-            width: 800px;
-            background-image: linear-gradient(125deg , rgba(240,186,0, 75%) , rgba(240,186,0, 20%));
-            border: 1px solid $yellow;
-            border-radius: 30px;
-            flex-shrink: 0;
+    .XPTimeline {
+        .inner-container {
             display: flex;
             flex-direction: column;
-            gap: 20px;
-                
-
-                h3 {
-                    font-family: $montserrat;
-                    font-weight: 500;
-                    font-size: 35px;
-                    letter-spacing: 5px;
-                    text-transform: uppercase;
-                    margin-bottom: 20px;
-                }
-
-                p {
-                    font-family: "Poppins", sans-serif;
-                    font-size: 22px;
-                    line-height: 32px;
-                    font-weight: 200;
-                }
-
-                a {
-                    font-family: "Poppins", sans-serif;
-                    font-weight: 500;
-                    font-size: 16px;
-                    color: #0D0D0D;
-                    letter-spacing: 0.3px;
-                    text-decoration: none;
-                }
-
-                .workHeading {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-
-                    .workSubhead {
+            gap: 60px;  
+    
+            div.inner {
+                padding: 35px 50px;
+                width: 800px;
+                background-image: linear-gradient(125deg , rgba(240,186,0, 75%) , rgba(240,186,0, 20%));
+                border: 1px solid $yellow;
+                border-radius: 30px;
+                flex-shrink: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                    
+    
+                    h3 {
                         font-family: $montserrat;
-                        font-size: 16px;
-                        font-weight: 300;
+                        font-weight: 500;
+                        font-size: 35px;
                         letter-spacing: 5px;
                         text-transform: uppercase;
+                        margin-bottom: 20px;
                     }
-                }
-
-                .workContent {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 20px;
-                    justify-content: space-between;
-                    height: 100%;
-
-                    .aboutBtn {
-                        a {
-                            font-family: "Poppins", sans-serif;
-                            font-weight: 500;
+    
+                    a {
+                        font-family: "Poppins", sans-serif;
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: #0D0D0D;
+                        letter-spacing: 0.3px;
+                        text-decoration: none;
+                    }
+    
+                    .workHeading {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+    
+                        .workSubhead {
+                            font-family: $montserrat;
                             font-size: 16px;
-                            color: $black;
-                            letter-spacing: 0.3px;
-                            display: flex;
-                            align-items: center;
-                            gap: 7px;
-                            text-transform: capitalize;
-                        }   
+                            font-weight: 300;
+                            letter-spacing: 5px;
+                            text-transform: uppercase;
+                        }
                     }
-                }
+    
+                    .workContent {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        justify-content: space-between;
+                        height: 100%;
+    
+                        .aboutBtn {
+                            a {
+                                font-family: "Poppins", sans-serif;
+                                font-weight: 500;
+                                font-size: 16px;
+                                color: $black;
+                                letter-spacing: 0.3px;
+                                display: flex;
+                                align-items: center;
+                                gap: 7px;
+                                text-transform: capitalize;
+                            }   
+                        }
+                    }
+            }
         }
     }
-
-}
-
-.inner-container::-webkit-scrollbar {
-    height: 5px!important;
-}
-
-.inner-container::-webkit-scrollbar-track {
-    background-color: rgba(160, 160, 160, 0.115);
-    border-radius: 10px;
-}
-                    
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: $yellow; 
 }
 
 

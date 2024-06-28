@@ -18,12 +18,20 @@ h2 {
 }
 
 span.subH {
+  display: block;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 5px;
   text-transform: uppercase;
   margin-bottom: 30px;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 200;
 }
 
 ul.navbar {
@@ -496,6 +504,83 @@ ul.heroButtons .aboutBtn a {
     width: 400px;
   }
 }
+#education {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 70px;
+  max-width: 1450px;
+  padding: 200px 20px 100px 20px;
+  margin: auto;
+  justify-content: space-between;
+}
+#education .edTitle {
+  position: sticky;
+  top: 50px;
+  text-align: end;
+}
+#education .edTimeline .inner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+#education .edTimeline .inner-container div.inner {
+  padding: 35px 50px;
+  width: 800px;
+  background-image: linear-gradient(125deg, rgba(240, 186, 0, 0.75), rgba(240, 186, 0, 0.2));
+  border: 1px solid #D9A711;
+  border-radius: 30px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#education .edTimeline .inner-container div.inner h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 35px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+#education .edTimeline .inner-container div.inner a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #0D0D0D;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+}
+#education .edTimeline .inner-container div.inner .workHeading {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#education .edTimeline .inner-container div.inner .workHeading .workSubhead {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+#education .edTimeline .inner-container div.inner .workContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  height: 100%;
+}
+#education .edTimeline .inner-container div.inner .workContent .aboutBtn a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #0D0D0D;
+  letter-spacing: 0.3px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  text-transform: capitalize;
+}
+
 #projects {
   display: flex;
   height: 80vh;
@@ -533,23 +618,23 @@ ul.heroButtons .aboutBtn a {
 }
 
 #workXP {
-  padding: 100px 0;
-}
-#workXP .xpTitle {
-  margin: auto;
+  display: flex;
+  gap: 70px;
   max-width: 1450px;
-  padding: 0 20px;
+  padding: 200px 20px 100px 20px;
+  margin: auto;
+  justify-content: space-between;
+}
+#workXP .XPTitle {
+  position: sticky;
+  top: 50px;
+}
+#workXP .XPTimeline .inner-container {
   display: flex;
   flex-direction: column;
+  gap: 60px;
 }
-#workXP .inner-container {
-  margin-top: 30px;
-  display: flex;
-  gap: 35px;
-  overflow-x: scroll;
-  padding: 0 40px 20px 40px;
-}
-#workXP .inner-container div.inner {
+#workXP .XPTimeline .inner-container div.inner {
   padding: 35px 50px;
   width: 800px;
   background-image: linear-gradient(125deg, rgba(240, 186, 0, 0.75), rgba(240, 186, 0, 0.2));
@@ -560,7 +645,7 @@ ul.heroButtons .aboutBtn a {
   flex-direction: column;
   gap: 20px;
 }
-#workXP .inner-container div.inner h3 {
+#workXP .XPTimeline .inner-container div.inner h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 35px;
@@ -568,13 +653,7 @@ ul.heroButtons .aboutBtn a {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-#workXP .inner-container div.inner p {
-  font-family: "Poppins", sans-serif;
-  font-size: 22px;
-  line-height: 32px;
-  font-weight: 200;
-}
-#workXP .inner-container div.inner a {
+#workXP .XPTimeline .inner-container div.inner a {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -582,26 +661,26 @@ ul.heroButtons .aboutBtn a {
   letter-spacing: 0.3px;
   text-decoration: none;
 }
-#workXP .inner-container div.inner .workHeading {
+#workXP .XPTimeline .inner-container div.inner .workHeading {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-#workXP .inner-container div.inner .workHeading .workSubhead {
+#workXP .XPTimeline .inner-container div.inner .workHeading .workSubhead {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 5px;
   text-transform: uppercase;
 }
-#workXP .inner-container div.inner .workContent {
+#workXP .XPTimeline .inner-container div.inner .workContent {
   display: flex;
   flex-direction: column;
   gap: 20px;
   justify-content: space-between;
   height: 100%;
 }
-#workXP .inner-container div.inner .workContent .aboutBtn a {
+#workXP .XPTimeline .inner-container div.inner .workContent .aboutBtn a {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -611,20 +690,6 @@ ul.heroButtons .aboutBtn a {
   align-items: center;
   gap: 7px;
   text-transform: capitalize;
-}
-
-.inner-container::-webkit-scrollbar {
-  height: 5px !important;
-}
-
-.inner-container::-webkit-scrollbar-track {
-  background-color: rgba(160, 160, 160, 0.115);
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: #D9A711;
 }
 
 .gallery {
