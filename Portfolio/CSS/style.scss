@@ -720,6 +720,25 @@ ul.heroButtons{
     }
 }
 
+// Education Section :: Responsive
+@media screen and (max-width: 1040px) {
+    #education {
+        flex-wrap: wrap;
+        justify-content: center;
+    
+        .edTitle {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            
+            p {
+                width: 90%;
+            }
+        }
+    }    
+}
+
 
 // Projects Section
 #projects {
@@ -854,6 +873,25 @@ ul.heroButtons{
     }
 }
 
+// Work XP Section :: Responsive
+@media screen and (max-width: 1040px) {
+    #workXP {
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        .XPTitle {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+
+            p {
+                width: 90%;
+            }
+        }
+    }    
+}
+
 
 
 
@@ -930,6 +968,17 @@ ul.heroButtons{
         h2, span, p {
             text-align: center !important;
         }
+
+        .description {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            
+            p {
+                width: 90%;
+            }
+        }
     }
 }
 
@@ -955,7 +1004,7 @@ footer {
     
     .footerH {
         max-width: 1450px;
-        padding: 0 15% 50px 15%;
+        padding: 0 0 50px 15%;
 
         h2 {
             width: 380px;
