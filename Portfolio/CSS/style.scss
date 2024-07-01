@@ -739,6 +739,20 @@ ul.heroButtons{
     }    
 }
 
+@media screen and (max-width: 850px) {
+    #education {
+        .edTimeline{
+            .inner-container{
+                align-items: center;
+
+                div.inner{
+                    width: 95%;
+                }
+            }
+        }
+    }
+}
+
 
 // Projects Section
 #projects {
@@ -892,6 +906,20 @@ ul.heroButtons{
     }    
 }
 
+@media screen and (max-width: 850px) {
+    #workXP {
+        .XPTimeline{
+            .inner-container{
+                align-items: center;
+
+                div.inner{
+                    width: 95%;
+                }
+            }
+        }
+    }
+}
+
 
 
 
@@ -977,6 +1005,18 @@ ul.heroButtons{
             
             p {
                 width: 90%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .gallery {
+        .photos {
+            .rightg, .leftg {
+                img {
+                    width: 90%;
+                }
             }
         }
     }

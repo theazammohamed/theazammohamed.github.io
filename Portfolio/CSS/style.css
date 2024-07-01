@@ -596,6 +596,14 @@ ul.heroButtons .aboutBtn a {
     width: 90%;
   }
 }
+@media screen and (max-width: 850px) {
+  #education .edTimeline .inner-container {
+    align-items: center;
+  }
+  #education .edTimeline .inner-container div.inner {
+    width: 95%;
+  }
+}
 #projects {
   display: flex;
   height: 80vh;
@@ -722,6 +730,14 @@ ul.heroButtons .aboutBtn a {
     width: 90%;
   }
 }
+@media screen and (max-width: 850px) {
+  #workXP .XPTimeline .inner-container {
+    align-items: center;
+  }
+  #workXP .XPTimeline .inner-container div.inner {
+    width: 95%;
+  }
+}
 .gallery {
   display: flex;
   padding: 150px 20px;
@@ -790,6 +806,11 @@ ul.heroButtons .aboutBtn a {
     align-items: center;
   }
   .gallery .description p {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .gallery .photos .rightg img, .gallery .photos .leftg img {
     width: 90%;
   }
 }
