@@ -34,6 +34,20 @@ p {
   font-weight: 200;
 }
 
+@media screen and (max-width: 580px) {
+  h2 {
+    font-size: 30px !important;
+  }
+  p {
+    font-size: 16px !important;
+    line-height: 25px !important;
+  }
+  span.subH {
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+}
 ul.navbar {
   display: flex;
   justify-content: space-between;
@@ -460,6 +474,20 @@ ul.heroButtons .aboutBtn a {
   transform: translate(-50%, 0%) !important;
 }
 
+@media screen and (max-width: 580px) {
+  .marquee__part__combi {
+    font-size: 40px;
+  }
+  .marquee__inner {
+    font-size: 30px;
+  }
+  .htmlSVG svg {
+    width: 70px;
+  }
+  .designSVG svg {
+    width: 60px;
+  }
+}
 #about {
   display: flex;
   max-width: 1450px;
@@ -502,6 +530,15 @@ ul.heroButtons .aboutBtn a {
   }
   #about .aboutIMG img {
     width: 400px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .aboutIMG {
+    align-items: center;
+    padding-top: 40px;
+  }
+  .aboutIMG img {
+    width: 250px !important;
   }
 }
 #education {
@@ -604,6 +641,17 @@ ul.heroButtons .aboutBtn a {
     width: 95%;
   }
 }
+@media screen and (max-width: 580px) {
+  .workHeading .workSubhead {
+    font-size: 12px !important;
+    letter-spacing: 5px;
+  }
+  .workHeading h3 {
+    font-size: 25px !important;
+    letter-spacing: 3px !important;
+    margin-bottom: 10px !important;
+  }
+}
 #projects {
   display: flex;
   height: 80vh;
@@ -628,6 +676,12 @@ ul.heroButtons .aboutBtn a {
   text-decoration: none;
 }
 
+@media screen and (max-width: 580px) {
+  #projects div {
+    font-size: 25px;
+    line-height: 40px;
+  }
+}
 .techStack {
   margin: 200px 0 100px 0;
 }
@@ -917,5 +971,33 @@ footer .footerBottom {
   }
   footer .footerContent form {
     padding-left: 0;
+  }
+}
+@media screen and (max-width: 580px) {
+  footer .footerH {
+    padding: 10px 20px 10px 20px;
+  }
+  footer .footerH h2 {
+    width: 80% !important;
+    line-height: 38px !important;
+  }
+  footer .footerContent {
+    padding: 10px 20px 30px 20px;
+  }
+  footer .footerContent span {
+    font-size: 15px;
+  }
+  footer .footerContent a {
+    font-size: 20px !important;
+    line-height: 32px;
+  }
+  footer form {
+    width: 100%;
+  }
+  footer .footerBottom {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -48,6 +48,25 @@ p {
     font-weight: 200;
 }
 
+// Responsiveness:: Global Styles
+@media screen and (max-width: 580px) {
+    h2 {
+        font-size: 30px!important;
+    }
+
+    p {
+        font-size: 16px!important;
+        line-height: 25px!important;
+    }
+
+    span.subH {
+        font-size: 12px;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+}
+
+
 // Navbar Stylings
 ul.navbar {
     display: flex;
@@ -570,6 +589,26 @@ ul.heroButtons{
     transform: translate(-50%, 0%)!important;
   }
 
+  // Responsiveness:: Maqquee
+  @media screen and (max-width: 580px) {
+    .marquee__part__combi {
+        font-size: 40px;
+    }
+
+    .marquee__inner {
+        font-size: 30px;
+    }
+
+    .htmlSVG svg {
+        width: 70px;
+    }
+
+    .designSVG svg {
+        width: 60px;
+    }
+  }
+  
+
 
   // About Section
   #about {
@@ -624,6 +663,17 @@ ul.heroButtons{
             img {
                 width: 400px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .aboutIMG {
+        align-items: center;
+        padding-top: 40px;
+
+        img {
+            width: 250px!important;
         }
     }
 }
@@ -753,6 +803,21 @@ ul.heroButtons{
     }
 }
 
+@media screen and (max-width: 580px) {
+    .workHeading {
+        .workSubhead {
+            font-size: 12px!important;
+            letter-spacing: 5px;
+        }
+
+        h3 {
+            font-size: 25px!important;
+            letter-spacing: 3px!important;
+            margin-bottom: 10px!important;
+        }
+    }
+}
+
 
 // Projects Section
 #projects {
@@ -781,6 +846,16 @@ ul.heroButtons{
     }
 }
 
+
+//Responsiveness:: Projects
+@media screen and (max-width: 580px) {
+    #projects {
+        div {
+            font-size: 25px;
+            line-height: 40px;
+        }
+    }
+}
 
 //  Tech Stack Section
 .techStack {
@@ -1161,5 +1236,42 @@ footer {
                 padding-left: 0;
             }
         }
+    }
+}
+
+@media screen and (max-width: 580px) {
+    footer{
+        .footerH {
+            padding: 10px 20px 10px 20px;
+
+            h2 {
+                width: 80%!important;
+                line-height: 38px!important;
+            }
+        }
+    
+        .footerContent{
+            padding: 10px 20px 30px 20px;
+
+            span {
+                font-size: 15px;
+            }
+
+            a {
+                font-size: 20px!important;
+                line-height: 32px;
+            }
+        }
+
+        form {
+            width: 100%;
+        }
+
+        .footerBottom {
+            font-size: 16px;
+            font-weight: 300;
+            letter-spacing: 5px;
+            text-align: center;
+    }
     }
 }
