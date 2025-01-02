@@ -642,6 +642,14 @@ ul.heroButtons .aboutBtn a {
   }
 }
 @media screen and (max-width: 580px) {
+  .edTimeline .inner-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  .edTimeline .inner-container div.inner {
+    padding: 30px 30px !important;
+  }
   .workHeading .workSubhead {
     font-size: 12px !important;
     letter-spacing: 5px;
@@ -654,34 +662,80 @@ ul.heroButtons .aboutBtn a {
 }
 #projects {
   display: flex;
-  height: 80vh;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 200px 20px 100px 20px;
+  align-items: center;
+  max-width: 1450px;
+  margin: auto;
+}
+#projects .projTitle {
+  width: 50%;
+  align-self: flex-start;
+  margin-bottom: 50px;
+  position: sticky;
+  top: 50px;
+}
+#projects h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 35px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+#projects .project img {
+  width: 650px;
+  border: 2px solid #D9A711;
+  border-bottom: 0;
+  margin-bottom: -4px;
+  border-radius: 30px 30px 0 0;
+}
+#projects .project .rowtwo {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #D9A711;
+  border-radius: 0 0 30px 30px;
+}
+#projects .project .rowtwo h3 {
+  text-align: center;
+  width: 80%;
+  margin: 0;
+  padding: 10px 0;
+  border-right: 2px solid #D9A711;
+  background-image: linear-gradient(125deg, rgba(240, 186, 0, 0.75), rgba(240, 186, 0, 0.2));
+  border-radius: 0 0 0 30px;
+}
+#projects .project .rowtwo .aboutBtn {
+  width: 20%;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-#projects div {
-  font-family: "Poppins", sans-serif;
-  text-transform: uppercase;
-  font-size: 40px;
-  font-weight: 200;
-  text-align: center;
-  line-height: 60px;
-  color: #0D0D0D;
+#projects .projList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-#projects div a {
-  background-color: #D9A711;
+#projects .projList .workBtn a {
+  background-color: #F2F2F2;
+  padding: 10px 40px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(13, 13, 13, 0.4);
   color: #0D0D0D;
-  border: 1px solid #0D0D0D;
-  padding: 0 20px;
-  border-radius: 50px;
   text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #0D0D0D;
+  letter-spacing: 0.3px;
+}
+#projects .projList .workBtn a:hover {
+  background-color: #0D0D0D;
+  color: #F2F2F2;
+  box-shadow: none;
 }
 
-@media screen and (max-width: 580px) {
-  #projects div {
-    font-size: 25px;
-    line-height: 40px;
-  }
-}
 .techStack {
   margin: 200px 0 100px 0;
 }
@@ -790,6 +844,7 @@ ul.heroButtons .aboutBtn a {
   }
   #workXP .XPTimeline .inner-container div.inner {
     width: 95%;
+    padding: 30px 30px;
   }
 }
 .gallery {

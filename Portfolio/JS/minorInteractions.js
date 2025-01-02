@@ -110,17 +110,6 @@ function raf(time) {
 
 requestAnimationFrame(raf)
 
-// draggable horizontal section
-// const workXP = document.querySelector("#workXP");
-// const draggableElements = workXP.querySelectorAll(".inner");
+// do some basic animations on text and stuff
 
-// draggableElements.forEach(element => {
-//   Draggable.create(element, {
-//     // Enable dragging on the entire element
-//     drag: true
-//   });
-// });
-
-// Draggable.create(workXP.querySelector(".inner-container"), {
-//   drag: true
-// });
+// Splash screen?

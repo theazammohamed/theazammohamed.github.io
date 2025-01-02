@@ -9,3 +9,6 @@ form.addEventListener('submit', e => {
     .then(() => {window.location.reload();})
     .catch(error => console.error('Error!', error.message))
 })
+
+// try to put a loading screen when the form submits
+
