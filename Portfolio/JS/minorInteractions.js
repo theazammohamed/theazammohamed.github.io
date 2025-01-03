@@ -101,15 +101,18 @@ window.addEventListener("scroll", function(){
 });
 
 // Lenis Smooth Scrolling
-const lenis = new Lenis()
 
-function raf(time) {
-  lenis.raf(time)
-  requestAnimationFrame(raf)
-}
+// const lenis = new Lenis()
 
-requestAnimationFrame(raf)
+// function raf(time) {
+//   lenis.raf(time)
+//   requestAnimationFrame(raf)
+// }
+
+// requestAnimationFrame(raf)
 
 // do some basic animations on text and stuff
 
 // Splash screen?
+
+
