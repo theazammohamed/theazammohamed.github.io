@@ -1005,6 +1005,14 @@ ul.heroButtons {
   }
 }
 
+@media screen and (max-width: 580px) {
+  #techStack {
+    img {
+      width: 80px;
+    }
+  }
+}
+
 
 // Work XP Section
 #workXP {

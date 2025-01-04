@@ -820,6 +820,11 @@ ul.heroButtons .aboutBtn a {
     width: auto;
   }
 }
+@media screen and (max-width: 580px) {
+  #techStack img {
+    width: 80px;
+  }
+}
 #workXP {
   display: flex;
   gap: 70px;
