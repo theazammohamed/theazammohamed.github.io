@@ -785,6 +785,7 @@ ul.heroButtons .aboutBtn a {
     width: 400px;
     height: -moz-fit-content;
     height: fit-content;
+    justify-content: center;
   }
   .project img {
     width: 400px;
