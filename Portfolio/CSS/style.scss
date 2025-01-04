@@ -833,7 +833,7 @@ ul.heroButtons {
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   scroll-snap-type: inline mandatory;
-  padding: 0 20px 10px 20px;
+  padding: 0 0 10px 20px;
   scroll-padding-inline: 20px;
 
   &::-webkit-scrollbar {
@@ -957,8 +957,6 @@ ul.heroButtons {
 }
 
 @media screen and (max-width: 580px) {
-  #projects {
-  }
   .project {
     width: 400px;
     height: fit-content;
@@ -999,6 +997,12 @@ ul.heroButtons {
         margin-left: -3px;
         filter: drop-shadow(0px 0px 10px rgba(240, 186, 0, 1));
     }
+}
+
+@media screen and (max-width: 1400px) {
+  #techStack {
+    width: auto;
+  }
 }
 
 

@@ -681,7 +681,7 @@ ul.heroButtons .aboutBtn a {
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   scroll-snap-type: inline mandatory;
-  padding: 0 20px 10px 20px;
+  padding: 0 0 10px 20px;
   scroll-padding-inline: 20px;
   /* Track */
   /* Handle */
@@ -815,6 +815,11 @@ ul.heroButtons .aboutBtn a {
   filter: drop-shadow(0px 0px 10px rgb(240, 186, 0));
 }
 
+@media screen and (max-width: 1400px) {
+  #techStack {
+    width: auto;
+  }
+}
 #workXP {
   display: flex;
   gap: 70px;
