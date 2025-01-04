@@ -773,6 +773,7 @@ ul.heroButtons .aboutBtn a {
     width: 100%;
     justify-items: center;
     margin-bottom: 50px;
+    text-align: center;
   }
   #projects .projTitle p {
     width: 90%;
