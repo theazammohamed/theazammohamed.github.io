@@ -1,0 +1,16 @@
+#about {
+  background-color: #d9a711;
+  animation: color 10s forwards;
+}
+
+@keyframes color {
+  0% {
+    background-color: #d9a711;
+  }
+  50% {
+    background-color: #76683e;
+  }
+  100% {
+    background-color: #000000;
+  }
+}/*# sourceMappingURL=study.css.map */
