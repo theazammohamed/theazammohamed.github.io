@@ -1,0 +1,16 @@
+.navWrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+
+#navbar {
+    display: flex;
+    width: 90vw;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+

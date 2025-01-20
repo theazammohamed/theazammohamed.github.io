@@ -1,6 +1,6 @@
 function BestLocations() {
   return (
-    <div>
+    <div style={{height:"100vh"}}>
       BestLocations
     </div>
   );
