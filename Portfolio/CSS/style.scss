@@ -94,8 +94,8 @@ ul.navbar {
 
 .navSlide {
   background-color: $black;
-  width: 100vw;
-  height: 100vh;
+  width: 105vw;
+  height: 105vh;
   position: fixed;
   left: 100%;
   z-index: 1;
@@ -974,31 +974,31 @@ ul.heroButtons {
 
   .projList {
     .extraProj {
-        width: 450px;
-        height: 330px;
-      } 
-  } 
+      width: 450px;
+      height: 330px;
+    }
+  }
 }
 
 // Tech Stack Section
 #techStack {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    margin: auto;
-    width: 1400px;
-    padding: 150px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin: auto;
+  width: 1400px;
+  padding: 150px 0;
 
-    .stackH {
-        font-family: "Poppins", sans-serif;
-        font-size: 40px;
-        font-weight: 700;
-        text-transform: capitalize;
-        margin-left: -3px;
-        filter: drop-shadow(0px 0px 10px rgba(240, 186, 0, 1));
-    }
+  .stackH {
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-left: -3px;
+    filter: drop-shadow(0px 0px 10px rgba(240, 186, 0, 1));
+  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -1014,7 +1014,6 @@ ul.heroButtons {
     }
   }
 }
-
 
 // Work XP Section
 #workXP {
